@@ -2,8 +2,20 @@
   margin-bottom: 20px;
 }
 
-.searchBoxInput {
+/* .searchBoxInput {
   padding: 8px;
   font-size: 14px;
   width: 100%;
+} */
+
+.label {
+  font-weight: bold;
+}
+
+.input {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

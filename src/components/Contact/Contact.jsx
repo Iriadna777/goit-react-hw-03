@@ -5,14 +5,16 @@ import styles from './Contact.module.css';
 
 const Contact = ({ contact, onDeleteContact }) => {
   return (
-    <div className={styles.contactItem}>
-      <span className={styles.contactInfo}>
+    <div className={styles.contact}>
+      <p className={styles.contactName}>
         <FaUser className={styles.icon} /> {contact.name}
-      </span>
-      <span className={styles.contactInfo}>
+      </p>
+      <p className={styles.contactNumber}>
         <FaPhoneAlt className={styles.icon} /> {contact.number}
-      </span>
-      <button className={styles.deleteButton} onClick={() => onDeleteContact(contact.id)}>Delete</button>
+      </p>
+      <button 
+      className={styles.deleteButton} 
+      onClick={() => onDeleteContact(contact.id)}>Delete</button>
     </div>
   );
 };

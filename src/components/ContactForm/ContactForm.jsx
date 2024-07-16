@@ -26,12 +26,20 @@ const ContactForm = ({ onAddContact }) => {
         setSubmitting(false);
       }}
     >
-      <Form className={styles.contactForm}>
-        <Field className={styles.contactFormInput} name="name" type="text" placeholder="Name" />
+      <Form className={styles.form}>
+        <label htmlFor="name" className={styles.label}>
+          Name
+        </label>
+        <Field className={styles.field} name="name" type="text" />
         <ErrorMessage name="name" component="div" className={styles.error} />
-        <Field className={styles.contactFormInput} name="number" type="text" placeholder="Number" />
+        <label htmlFor="number" className={styles.label}>
+          Number
+        </label>
+        <Field className={styles.field} name="number" type="text" />
         <ErrorMessage name="number" component="div" className={styles.error} />
-        <button type="submit" className={styles.addButton}>Add contact</button>
+        <button className={styles.button} type="submit">
+          Add contact
+        </button>
       </Form>
     </Formik>
   );
